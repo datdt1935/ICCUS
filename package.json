@@ -3,13 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "nodemon app.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev": "ng build --prod && nodemon app.js"
-
+    "build": "ng build --prod && nodemon app.js"
   },
   "private": true,
   "dependencies": {

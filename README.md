@@ -6,6 +6,21 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
-## Run
+## 1 Installation
 
-`npm run dev`
+Config connection to the database file app.js. Then execute the statement to create sql data table
+
+## 2 Build 
+
+You can skip this step
+
+`npm run build`
+
+## 3 Start
+
+`npm run start`
+
+
+## Check port running 
+`netstat -ano | findstr :<yourPortNumber>`
+`taskkill /PID <typeyourPIDhere> /F`

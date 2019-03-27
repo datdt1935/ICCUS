@@ -1,0 +1,1 @@
+CREATE TABLE Customer(id int AUTO_INCREMENT, Name VARCHAR(50), FirstName VARCHAR(50), Address VARCHAR(255), PostalCode VARCHAR(8), City VARCHAR(20), Phone VARCHAR(10), Comments TEXT, Email VARCHAR(50), PRIMARY KEY (id))
