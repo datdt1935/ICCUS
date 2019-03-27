@@ -1,0 +1,25 @@
+<div class="wrap-table">
+  <table class="w3-table">
+    <tr>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Adress</th>
+      <th>Code postal</th>
+      <th>Ville</th>
+      <th>Téléphone</th>
+      <th>Email</th>
+      <th>CommentairesNom</th>
+    </tr>
+    <tr *ngFor="let item of items">
+      <td>{{ item.Name }}</td>
+      <td>{{ item.FirstName }}</td>
+      <td>{{ item.Address }}</td>
+
+      <td>{{ item.PostalCode }}</td>
+      <td>{{ item.City }}</td>
+      <td>{{ item.Phone }}</td>
+      <td>{{ item.Email }}</td>
+      <td>{{ item.Comments }}</td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,33 @@
+<article>
+  <form [formGroup]="form">
+    <div class="error" *ngIf="submitted && f.name.errors">Name is required</div>
+    <input formControlName="name" placeholder="Nom" />
+    <div class="error" *ngIf="submitted && f.firstname.errors">
+      Firstname is required
+    </div>
+    <input formControlName="firstname" placeholder="Préno" />
+    <div class="error" *ngIf="submitted && f.address.errors">
+      Addresss is required
+    </div>
+    <input formControlName="address" placeholder="Adresse" />
+    <div class="error" *ngIf="submitted && f.postalcode.errors">
+      Postalcode is required
+    </div>
+    <input formControlName="postalcode" placeholder="Code postal" />
+    <div class="error" *ngIf="submitted && f.city.errors">City is required</div>
+    <input formControlName="city" placeholder="Ville" />
+    <div class="error" *ngIf="submitted && f.phone.errors">
+      Phone is required and 10 chars
+    </div>
+    <input maxlength="10" formControlName="phone" placeholder="Téléphone" />
+    <div class="error" *ngIf="submitted && f.email.errors">
+      Email is required
+    </div>
+    <input formControlName="email" placeholder="Email" />
+    <div class="error" *ngIf="submitted && f.comments.errors">
+      Comments is required
+    </div>
+    <input formControlName="comments" placeholder="Commentaires" />
+    <button [disabled]="!form.valid" (click)="onSubmit()">ENVOYER</button>
+  </form>
+</article>
